@@ -1,14 +1,14 @@
 # BCGenerator
 BCGenerator 一个比特币生成私钥 公钥 地址的库
 
-### 使用方法：
+### BCGenerator项目集成方法：
 可以直接使用pod集成，也可以将代码拖入项目中；
-pod 集成方法：
+pod 集成：
 ```
 pod 'BCGenerator'
 ```
 
-### 依赖类库：
+### BCGenerator依赖类库：
 ```
   s.dependency "CBSecp256k1"
   s.dependency "CBBase58"
@@ -16,7 +16,7 @@ pod 'BCGenerator'
 CBSecp256k1 是从 iOS比特币项目CoreBitcoin 摘出来的椭圆双曲线算法部分。
 CBBase58 是从 iOS比特币项目CoreBitcoin 摘出来的base58算法部分，并且集成了RIPEMD算法的 RIPEMD-160。
 
-### 目录
+### BCGenerator目录
 库文件目录如下：
 ```
 BCGenerator.h	EncryptUtil.h	NSData+UTF8.h	NSString+SHA.h
@@ -55,4 +55,7 @@ BCGenerator.m	EncryptUtil.m	NSData+UTF8.m	NSString+SHA.m
 -(instancetype)initWithWith:(NSString *)seedStr;
 
 ```
+### SHA
+SHA1-256 主要是由 EncryptUtil 来完成的。其他的sha算法在NSString+SHA中。
+
 
