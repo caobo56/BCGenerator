@@ -14,7 +14,11 @@ pod 'BCGenerator'
   s.dependency "CBBase58"
 ```
 CBSecp256k1 是从 iOS比特币项目CoreBitcoin 摘出来的椭圆双曲线算法部分。
+项目地址：https://github.com/caobo56/CBSecp256k1
+
 CBBase58 是从 iOS比特币项目CoreBitcoin 摘出来的base58算法部分，并且集成了RIPEMD算法的 RIPEMD-160。
+项目地址：https://github.com/caobo56/CBBase58
+项目简介：https://www.jianshu.com/p/b20a26de4bc7
 
 ### BCGenerator目录
 库文件目录如下：
