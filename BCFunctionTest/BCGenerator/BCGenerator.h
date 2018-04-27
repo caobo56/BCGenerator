@@ -21,12 +21,16 @@
 @interface BCGenerator : NSObject
 
 @property(strong,nonatomic)NSData * rootPrivatekey;
+//主私钥
 
 @property(strong,nonatomic)NSData * mainProcessingKey;
+//主链编码
 
 @property(strong,nonatomic)NSData * rootPublickey;
+//主公钥
 
 @property(strong,nonatomic)NSString * address;
+//由主公钥生成的比特币地址
 
 /**
  根据伪随机数生成种子
