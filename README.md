@@ -1,5 +1,6 @@
 # BCGenerator
-BCGenerator 一个比特币生成私钥 公钥 地址的库
+BCGenerator 一个比特币生成私钥，公钥，地址的pod库
+简介：https://www.jianshu.com/p/7a259a46ecd9
 
 ### BCGenerator项目集成方法：
 可以直接使用pod集成，也可以将代码拖入项目中；
