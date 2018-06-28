@@ -9,7 +9,7 @@ DEPENDENCIES:
   - CBSecp256k1
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - CBBase58
     - CBSecp256k1
     - OpenSSL-Universal
@@ -21,4 +21,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e0c21496ccd43fbe0e4159e837e13c1aff638d9c
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
