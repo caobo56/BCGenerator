@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "BCGenerator.h"
+#import "BTCScript.h"
+#import "BTCAddress.h"
 
 
 @interface ViewController ()
@@ -37,6 +39,8 @@
     NSLog(@"generator.rootPublickey = %@",generator.rootPublickey);
     NSLog(@"generator.address = %@",generator.address);
 
+    BTCScript* outputScript = [[BTCScript alloc] initWithAddress:[BTCAddress addressWithString:generator.address]];
+    NSLog(@"outputScript.data == %@",outputScript.data);
 }
 
 
