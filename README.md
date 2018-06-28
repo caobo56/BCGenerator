@@ -119,7 +119,7 @@ BTCSignatureHashType.h
 ```
     BCGenerator * bb = [[BCGenerator alloc]initWithWith:@"caobor111111"];
     BTCScript* outputScript = [[BTCScript alloc] initWithAddress:[BTCAddress addressWithString:bb.address]];
-    NSLog(@"sc.data == %@",outputScript.data);
+    NSLog(@"outputScript.data == %@",outputScript.data);
 
 ```
 
