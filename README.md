@@ -80,3 +80,47 @@ pod 版本从 0.9.0 升级到 0.9.1
 
 --------------------------------------------------------------------------------------
 
+### 0.9.2
+
+pod 版本从 0.9.1 升级到 0.9.2 
+
+添加 BTCScript
+
+下面是本次添加的文件
+
+```
+BTC256.h
+BTC256.m
+BTCAddress.h
+BTCAddress.m
+BTCAddressSubclass.h
+BTCBigNumber.h
+BTCBigNumber.m
+BTCCurvePoint.h
+BTCCurvePoint.m
+BTCErrors.h
+BTCErrors.m
+BTCKey.h
+BTCKey.m
+BTCNetwork.h
+BTCNetwork.m
+BTCOpcode.h
+BTCOpcode.m
+BTCProtocolSerialization.h
+BTCProtocolSerialization.m
+BTCScript.h
+BTCScript.m
+BTCSignatureHashType.h
+
+```
+
+使用方法：
+
+```
+    BCGenerator * bb = [[BCGenerator alloc]initWithWith:@"caobor111111"];
+    BTCScript* outputScript = [[BTCScript alloc] initWithAddress:[BTCAddress addressWithString:bb.address]];
+    NSLog(@"outputScript.data == %@",outputScript.data);
+
+```
+
+--------------------------------------------------------------------------------------
