@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BCGenerator"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "caobo's BCGenerator. A RIPEMD code. Copy from CoreBitcoin."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/caobo56/BCGenerator.git", :tag => "0.9.0" }
+  s.source       = { :git => "https://github.com/caobo56/BCGenerator.git", :tag => "0.9.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

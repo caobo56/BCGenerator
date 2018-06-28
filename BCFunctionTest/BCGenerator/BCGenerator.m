@@ -41,21 +41,21 @@ static const NSString * BTCHMACSHA512key = @"Bitcoin seed";
 
 -(void)creatSeedWith:(NSString *)seedStr{
     NSData *seedData = [seedStr dataUsingEncoding:NSUTF8StringEncoding];
-    _seedData = [EncryptUtil sha256DataTwice:seedData];
+    _seedData = [[EncryptUtil sha256DataTwice:seedData] copy];
 }
 
 -(void)creatRootPrivatekey{
     NSData * hmac = BTCHMACSHA512([BTCHMACSHA512key dataUsingEncoding:NSUTF8StringEncoding], _seedData);
-    self.rootPrivatekey = [hmac subdataWithRange:NSMakeRange(0, hmac.length/2)];
+    self.rootPrivatekey = [[hmac subdataWithRange:NSMakeRange(0, hmac.length/2)] copy];
 }
 
 -(void)creatmainProcessingKey{
     NSData * hmac = BTCHMACSHA512([BTCHMACSHA512key dataUsingEncoding:NSUTF8StringEncoding], _seedData);
-    self.mainProcessingKey = [hmac subdataWithRange:NSMakeRange(hmac.length/2, self.rootPrivatekey.length)];
+    self.mainProcessingKey = [[hmac subdataWithRange:NSMakeRange(hmac.length/2, self.rootPrivatekey.length)] copy];
 }
 
 -(void)creatRootPublickey{
-    _rootPublickey = [CBSecp256k1 generatePublicKeyWithPrivateKey:_rootPrivatekey compression:YES];
+    _rootPublickey = [[CBSecp256k1 generatePublicKeyWithPrivateKey:_rootPrivatekey compression:YES] copy];
 }
 
 -(void)creatAddress{
@@ -63,7 +63,7 @@ static const NSString * BTCHMACSHA512key = @"Bitcoin seed";
     NSData * dat = [NSData convertHexStrToData:@"0"];
     NSMutableData * add = [[NSMutableData alloc]initWithData:dat];
     [add appendData:address];
-    _address = [add base58CheckString];
+    _address = [[add base58CheckString] copy];
 }
 
 @end

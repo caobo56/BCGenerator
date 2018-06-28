@@ -166,14 +166,14 @@
 		A85620E82092D97F00207519 /* BCGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				A85620E92092D97F00207519 /* NSString+SHA.h */,
-				A85620EA2092D97F00207519 /* EncryptUtil.m */,
-				A85620EB2092D97F00207519 /* NSData+UTF8.m */,
+				A85620F02092D97F00207519 /* BCGenerator.h */,
 				A85620EC2092D97F00207519 /* BCGenerator.m */,
 				A85620ED2092D97F00207519 /* EncryptUtil.h */,
-				A85620EE2092D97F00207519 /* NSString+SHA.m */,
+				A85620EA2092D97F00207519 /* EncryptUtil.m */,
 				A85620EF2092D97F00207519 /* NSData+UTF8.h */,
-				A85620F02092D97F00207519 /* BCGenerator.h */,
+				A85620EB2092D97F00207519 /* NSData+UTF8.m */,
+				A85620E92092D97F00207519 /* NSString+SHA.h */,
+				A85620EE2092D97F00207519 /* NSString+SHA.m */,
 			);
 			path = BCGenerator;
 			sourceTree = "<group>";

@@ -31,7 +31,12 @@
 -(void)test{
     BCGenerator * generator = [[BCGenerator alloc]initWithWith:@"pseudorandom sequence"];
     // pseudorandom sequence 为你的随机数生成的结果
-    NSLog(@"\ngenerator.rootPrivatekey = %@\n generator.mainProcessingKey = %@\ngenerator.rootPublickey = %@\ngenerator.address = %@",generator.rootPrivatekey,generator.mainProcessingKey,generator.rootPublickey,generator.address);
+
+    NSLog(@"generator.rootPrivatekey = %@",generator.rootPrivatekey);
+    NSLog(@"generator.mainProcessingKey = %@",generator.mainProcessingKey);
+    NSLog(@"generator.rootPublickey = %@",generator.rootPublickey);
+    NSLog(@"generator.address = %@",generator.address);
+
 }
 
 
