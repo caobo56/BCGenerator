@@ -71,6 +71,8 @@ BCGenerator.m	EncryptUtil.m	NSData+UTF8.m	NSString+SHA.m
 ### SHA
 SHA1-256 主要是由 EncryptUtil 来完成的。其他的sha算法在NSString+SHA中。
 
+
+# 版本更新
 --------------------------------------------------------------------------------------
 ### 0.9.1发布
 
