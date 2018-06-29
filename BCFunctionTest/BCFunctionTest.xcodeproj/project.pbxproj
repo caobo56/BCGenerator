@@ -27,7 +27,6 @@
 		A83414C720E4A712006EC41F /* BTCKey.m in Sources */ = {isa = PBXBuildFile; fileRef = A83414BD20E4A712006EC41F /* BTCKey.m */; };
 		A83414C820E4A712006EC41F /* BTCProtocolSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A83414BE20E4A712006EC41F /* BTCProtocolSerialization.m */; };
 		A85620F12092D97F00207519 /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A85620EA2092D97F00207519 /* EncryptUtil.m */; };
-		A85620F22092D97F00207519 /* NSData+UTF8.m in Sources */ = {isa = PBXBuildFile; fileRef = A85620EB2092D97F00207519 /* NSData+UTF8.m */; };
 		A85620F32092D97F00207519 /* BCGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A85620EC2092D97F00207519 /* BCGenerator.m */; };
 		A85620F42092D97F00207519 /* NSString+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = A85620EE2092D97F00207519 /* NSString+SHA.m */; };
 		A85620F62092D9B100207519 /* BCGenerator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A85620F52092D9B100207519 /* BCGenerator.podspec */; };
@@ -93,11 +92,9 @@
 		A83414BE20E4A712006EC41F /* BTCProtocolSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTCProtocolSerialization.m; sourceTree = "<group>"; };
 		A85620E92092D97F00207519 /* NSString+SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA.h"; sourceTree = "<group>"; };
 		A85620EA2092D97F00207519 /* EncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtil.m; sourceTree = "<group>"; };
-		A85620EB2092D97F00207519 /* NSData+UTF8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+UTF8.m"; sourceTree = "<group>"; };
 		A85620EC2092D97F00207519 /* BCGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCGenerator.m; sourceTree = "<group>"; };
 		A85620ED2092D97F00207519 /* EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtil.h; sourceTree = "<group>"; };
 		A85620EE2092D97F00207519 /* NSString+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA.m"; sourceTree = "<group>"; };
-		A85620EF2092D97F00207519 /* NSData+UTF8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+UTF8.h"; sourceTree = "<group>"; };
 		A85620F02092D97F00207519 /* BCGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCGenerator.h; sourceTree = "<group>"; };
 		A85620F52092D9B100207519 /* BCGenerator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BCGenerator.podspec; sourceTree = "<group>"; };
 		C128F057CC23D22C0E6C5F85 /* Pods-BCFunctionTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCFunctionTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BCFunctionTest/Pods-BCFunctionTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,8 +221,6 @@
 				A85620EC2092D97F00207519 /* BCGenerator.m */,
 				A85620ED2092D97F00207519 /* EncryptUtil.h */,
 				A85620EA2092D97F00207519 /* EncryptUtil.m */,
-				A85620EF2092D97F00207519 /* NSData+UTF8.h */,
-				A85620EB2092D97F00207519 /* NSData+UTF8.m */,
 				A85620E92092D97F00207519 /* NSString+SHA.h */,
 				A85620EE2092D97F00207519 /* NSString+SHA.m */,
 			);
@@ -408,7 +403,6 @@
 				A83414C520E4A712006EC41F /* BTCCurvePoint.m in Sources */,
 				A83414BF20E4A712006EC41F /* BTCScript.m in Sources */,
 				A85620F12092D97F00207519 /* EncryptUtil.m in Sources */,
-				A85620F22092D97F00207519 /* NSData+UTF8.m in Sources */,
 				A83414C120E4A712006EC41F /* BTCErrors.m in Sources */,
 				A85620F42092D97F00207519 /* NSString+SHA.m in Sources */,
 			);

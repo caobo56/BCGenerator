@@ -8,7 +8,6 @@
 
 #import "BCGenerator.h"
 #import "EncryptUtil.h"
-#import "NSData+UTF8.h"
 #import <BTCData.h>
 #import <CBSecp256k1.h>
 #import <NSData+Hashing.h>
@@ -60,7 +59,7 @@ static const NSString * BTCHMACSHA512key = @"Bitcoin seed";
 
 -(void)creatAddress{
     NSData * address = BTCHash160(_rootPublickey);
-    NSData * dat = [NSData convertHexStrToData:@"0"];
+    NSData * dat = [EncryptUtil convertHexStrToData:@"0"];
     NSMutableData * add = [[NSMutableData alloc]initWithData:dat];
     [add appendData:address];
     _address = [[add base58CheckString] copy];

@@ -28,4 +28,6 @@
 
 + (NSData *)sha256DataTwiceKey:(NSData *)data;
 
++ (NSData *)convertHexStrToData:(NSString *)str;
+
 @end
